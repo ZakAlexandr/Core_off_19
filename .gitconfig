@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [user]
     email = zakorchevnyj@gmail.com
     name = ZakAlexandr
@@ -15,4 +16,23 @@
     br = branch
     hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
     type = cat-file -t
+=======
+[user]
+    email = zakorchevnyj@gmail.com
+    name = ZakAlexandr
+[core]
+    autocrlf = false
+    safecrlf = false
+    quotepath = off
+    safecrlt = warn    
+[gui]
+    recentrepo = E:/git/work/hello
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    type = cat-file -t
+>>>>>>> 66724a58daaaa65479b3b59200debadcc2cc0552
     dump = cat-file -p
