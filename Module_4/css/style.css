@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/*@font-face {
+    font-family: 'Playfair Display SC';
+    src: local('Playfair Display SC'), local('PlayfairDisplaySC-Regular'), url('./font/playfairdisplaysc.woff2') format('woff2'), url('./font/playfairdisplaysc.woff') format('woff'), url('./font/playfairdisplaysc.ttf') format('truetype');
+}*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PlayfairDisplay-Regular', 'AdobeInvisFont'; 
+}
+
+body{
+    background-color: #fff;
+    width: 1110px;
+    margin: 0 auto;  
+    font-size: 0;  
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.clearfix::after{
+    content: '';
+    display:table;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    color: #0f0101;
+    text-align: center;
+}
+
+
+.header{
+    font-size: 14px;
+    font-weight: 400;
+}
+.site_logo{
+    vertical-align: middle;
+}
+
+.menu_top{
+    margin-right: 30px;
+    list-style: none;
+    overflow: hidden;
+    margin-right: 30px;
+    vertical-align: middle;
+    float: right;
+}
+.menu_top li{
+    margin-right: 30px;
+
+    text-transform: uppercase;
+    text-align: right;
+    display: inline-block;
+}
+.menu_top li:last-child{
+    margin-right: 0;
+}
+.menu_top li a:hover{
+    color: #1abc9c;
+}
+.menu_top li a:focus{
+    background-color: #1abc9c; /* Цвет фона активного пункта */
+}
+.header_title{
+    font-weight: 700;
+    margin: 0 auto;
+    font-size: 48px;
+    color: rgba(81, 81, 81, 255);
+    text-align: center;
+    padding-top: 105px;
+}
+.underline{
+    background-image: url(../image/H2_border-bottum.png);
+    background-position: 0 32px;
+    background-size: 28px 9px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.product_card{
+    width: 225px;
+    height: 255px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+..product_card:nth-child(n+4){
+    margin-left: 0;
+}
+.product_card_url{
+
+}
+.price{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 255);
+}
+.price-title, .price-cach{
+    float: left;
+    font-size: 16px;
+}
+.price_title{
+    background-color: aliceblue;
+}
+.price_cach{
+    background-color: aquamarine;
+    font-size: 18px;
+    text-align: center;    
+}
+.price:hover .price-title{
+    background-color: red;
+    color: #fff;
+}
+.price:hover .price-cach{
+    background-color: green;
+    color: #fff;
+}
