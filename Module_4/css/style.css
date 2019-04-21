@@ -85,40 +85,57 @@ a {
 
 
 .product_card{
-    width: 225px;
-    height: 255px;
+    width: 255px;
+    height: 322px;
     float: left;
-    margin-right: 20px;
+    margin-right: 30px;
     margin-bottom: 30px;
     display: inline-block;
+    background-color: #e9f0fd;
+    position: relative;
 }
-..product_card:nth-child(n+4){
-    margin-left: 0;
+.product_card:nth-child(4n+4){
+    margin-right: 0;
 }
-.product_card_url{
-
+.product_card img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    top: 0;
+    margin: auto;
 }
 .price{
-    font-size: 18px;
-    color: rgba(255, 255, 255, 255);
+    font-size: 0;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
 }
-.price-title, .price-cach{
-    float: left;
-    font-size: 16px;
+.price_title, .price_cach{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 40px;
 }
 .price_title{
-    background-color: aliceblue;
+    float: left;
+    width: 200px;
+    background-color: #323232;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 14px;
 }
 .price_cach{
-    background-color: aquamarine;
-    font-size: 18px;
-    text-align: center;    
+    background-color: #8c8c8c;
+    text-align: center; 
+    float: right; 
+    width: 55px;  
 }
-.price:hover .price-title{
-    background-color: red;
+.product_card:hover .price_title{
+    background-color: #1abc9c;
     color: #fff;
 }
-.price:hover .price-cach{
-    background-color: green;
+.product_card:hover .price_cach{
+    background-color: #7fd9c7;
     color: #fff;
 }
