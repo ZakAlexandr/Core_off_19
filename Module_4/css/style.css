@@ -39,24 +39,35 @@ a {
     font-size: 14px;
     font-weight: 400;
 }
+.header nav{
+    padding-top: 38px;
+}
 .site_logo{
     vertical-align: middle;
-}
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
 
+}
+.site_logo::first-letter{
+    color: #1abc9c;
+}
 .menu_top{
     margin-right: 30px;
     list-style: none;
     overflow: hidden;
     margin-right: 30px;
-    vertical-align: middle;
+    margin-top: 8px;
     float: right;
 }
 .menu_top li{
     margin-right: 30px;
-
+    vertical-align: middle;
     text-transform: uppercase;
     text-align: right;
     display: inline-block;
+    font-weight: bold;
 }
 .menu_top li:last-child{
     margin-right: 0;
@@ -75,12 +86,14 @@ a {
     text-align: center;
     padding-top: 105px;
 }
-.underline{
+.header_title::after {
+    content: '';
     background-image: url(../image/H2_border-bottum.png);
-    background-position: 0 32px;
-    background-size: 28px 9px;
-    background-size: cover;
-    background-attachment: fixed;
+    margin: 32px auto 92px;
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-repeat: no-repeat;
 }
 
 
@@ -138,4 +151,55 @@ a {
 .product_card:hover .price_cach{
     background-color: #7fd9c7;
     color: #fff;
+}
+
+.news{
+    width: 350px;
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: top;
+}
+.news:last-child{
+    margin-right: 0;
+}
+.news_img{
+    max-height: 265px;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.news_title{
+    font-size: 18px;
+    color: rgba(85, 82, 82, 255);
+    text-align: left;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.news_title::after{
+    content: '';
+    display: table;
+    width: 168px;
+    height: 4px;
+    margin-top: 10px;
+    background-color: #4ec6ab;
+}
+.news_content{
+    font-size: 14px;
+    color: rgba(85, 82, 82, 255);
+    text-align: left;
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+.news_buttom{
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 255);
+    text-align: center;
+    background-color: #4ec6ab;
+    float: left;
+    line-height: 50px;
+    border-radius: 3px;
+    margin-bottom: 50px;
 }
