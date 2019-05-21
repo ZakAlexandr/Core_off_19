@@ -5,17 +5,6 @@
 #   git config --global core.excludesfile ~/.gitignore_global
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp
-/public/system
-/public/assets
-/public/upload_images
-Gemfile.lock
-.project
-.idea
-/*.sublime-*
-/dump/*.tgz
-config/pass_config.yml
 
-homework-05.psd
-Замечания.txt
+130419 Доработка сайта.txt
+homework-03.psd

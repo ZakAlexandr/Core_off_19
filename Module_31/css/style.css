@@ -15,8 +15,11 @@
 
 body{
     background-color: #fff;
+    
+}
+.header,main{
     width: 900px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 img{
     display: block;
@@ -36,11 +39,10 @@ a {
     padding: 77px 0 100px 0;
 }
 .menu_top{
-    /*margin-left: 300px;*/
     list-style: none;
-    overflow: hidden;
-    width: 570px;
     margin: 0 auto;
+    float: left;
+    padding-left: 164px;
 }
 .menu_top li{
     margin-right: 94px;
@@ -52,6 +54,7 @@ a {
 }
 .menu_top li a{
     font-size: 14px;
+    display: block;
 }
 .menu_top li a:hover{
     color: #ffe;  /*Цвет текста активного пункта */
@@ -73,7 +76,7 @@ a {
     margin: 0 0 90px 0;
 }
 .list_item:nth-child(n+5){
-    margin-bottom: 0;
+    margin-bottom: 54px;
 }
 .list_item span{
     font-weight: 400;
@@ -97,12 +100,15 @@ a {
     text-align: left;
     margin-top: 30px;
 }
+.button{
+  padding-bottom: 24px;
+}
 .list_button{
     display: block;
     width: 164px;
     height: 60px;
     font-weight: 400;
-    margin: 56px auto 24px;
+    margin: 0 auto;
     font-size: 20px;
     color: rgba(98, 98, 98, 255);
     text-align: center;
@@ -110,4 +116,5 @@ a {
     border: 1px solid rgba(98, 98, 98, 1);
     border-radius: 3px
 }
+
 
