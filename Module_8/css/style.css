@@ -1,0 +1,57 @@
+
+
+
+.header{
+  background-image: url(../img/VectorSmartObject@1X.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 540px;
+  background-color: rgb(26, 25, 21);
+}
+.logo{
+  display: none;
+}
+.sign{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.sign_in{
+  border-style: none;
+  background-color: rgba(26, 25, 21, 0);
+  margin-right: 20px;
+  color: rgba(255, 255, 255, 255);
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 1.2;
+
+}
+.sign_up {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(26, 25, 21, 0);
+  color: rgba(255, 255, 255, 255);
+  width: 94px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 1.2;
+}
+.header_butt_find{
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgb(255, 78, 80);
+  position: relative;
+  width: 280px;
+  height: 40px;
+  color: rgba(255, 255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 1.2;
+}
+
