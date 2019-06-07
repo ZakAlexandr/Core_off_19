@@ -63,7 +63,6 @@ a {
     margin-right: 30px;
     list-style: none;
     overflow: hidden;
-    margin-right: 30px;
     margin-top: 8px;
     float: right;
 }
@@ -72,7 +71,7 @@ a {
     vertical-align: middle;
     text-transform: uppercase;
     text-align: right;
-    display: inline-block;
+    float: left;
     font-weight: bold;
     color:rgba(81, 81, 81, 255);
 }
@@ -89,23 +88,24 @@ a {
 
 .slider {
   background-image: url(../img/slide4.png);
-  padding: 600px 0;
-  background-repeat: no-repeat;
   background-size: cover;
-  display: block;
+  min-height: 600px;
 }
 .slider_section{
   margin: 0 auto;
   width: 1110px;
+  position: relative;
+  min-height: 600px;
 }
 .slider_title{
   color: #fff;
   font-family: "Roboto";
-  display: inline-block;
   line-height: 1.367;
   text-align: left;
-  margin-left: 70px;
-  z-index: 7;
+  position: absolute;
+  top: 50%;
+  left: 145px;
+  transform: translateY(-70%);
 }
 .slider_title h1{
   font-size: 60px;
@@ -121,12 +121,12 @@ a {
   opacity: 0.651;
   border: 0;
   display: inline-block;
-  margin-top: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .but_left{
-  float: left;
-  width: 104px;
-  height: 104px;
+  left: 0%;
 }
 .but_left::after{
   content: '';
@@ -144,9 +144,7 @@ a {
   background-color: rgb(26, 188, 156);
 }
 .but_right{
-  float: right;
-  width: 104px;
-  height: 104px;
+  right: 0%;
 }
 .but_right::after{
   content: '';
@@ -173,11 +171,12 @@ a {
     color: rgba(81, 81, 81, 255);
     text-align: center;
     padding-top: 105px;
+    margin-bottom: 92px;
 }
 .header_title::after {
     content: '';
     background-image: url(../img/H2_border-bottum.png);
-    margin: 32px auto 92px;
+    margin: 32px auto;
     display: block;
     width: 164px;
     height: 7px;
@@ -237,10 +236,11 @@ a {
   position: relative;
   margin-top: 80px;
 }
-.actions a {
+.share-button {
   margin: 7px 6px;
   color: white;
   height: 50px;
+  width: 50px;  
   line-height: 50px;
   display: inline-block;
   font-size: 12px;
@@ -250,13 +250,10 @@ a {
   background: transparent;
   transition: .3s ease-in-out; 
 }
-.share-button {
-  width: 50px;
-}
 .add-to-cart{
   width: 166px;
 }
-.actions a:hover {
+.share-button:hover {
   border: none;
   background: #1abc9c;
   border: 1px solid #1abc9c;
