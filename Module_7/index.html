@@ -1,44 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href='./css/style.css' rel='stylesheet' type='text/css'>
+  <title>Document</title>
 </head>
 <body>
     <!-- section.wraper>header>h1.header-logo>a.header-link>img.header-img^^ul.header-menu>(li.mennu-items>a.menu-link)*5 -->
-    <section class="wraper">
 
-        <header>
-            <h1 class="header-logo"><a href="" class="header-link"><img src="" alt="" class="header-img"></a></h1>
-            <ul class="header-menu">
-                <li class="mennu-items"><a href="" class="menu-link">HOME</a></li>
-                <li class="mennu-items"><a href="" class="menu-link">ABOUT</a></li>
-                <li class="mennu-items"><a href="" class="menu-link">SERVICES</a></li>
-                <li class="mennu-items"><a href="" class="menu-link">GALLERY</a></li>
-                <li class="mennu-items"><a href="" class="menu-link">CONTACT</a></li>
-            </ul>
-        </header>
 
-        <!-- div.title-wrapper>h2.title+p.text -->
-        <div class="title-wrapper">
-            <h2 class="title"></h2>
-            <p class="text"></p>
+  <header>
+    <nav class="page_nav">
+      <h1 class="header_logo"><a href="index.html" class="header_link">Golden</a></h1>
+      <ul class="header_menu">
+        <li class="menu_items"><a href="#" class="menu_link">HOME</a></li>
+        <li class="menu_items"><a href="#" class="menu_link">SERVICES</a></li>
+        <li class="menu_items"><a href="#" class="menu_link">Portfolio</a></li>
+        <li class="menu_items"><a href="#" class="menu_link">ABOUT</a></li>
+        <li class="menu_items"><a href="#" class="menu_link">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="wraper">
+
+    <h2 class="section_title">Services</h2>
+    <p class="section_text greu">Proin iaculis purus consequat sem cure. </p>
+
+    <ul class="services">
+      <li class="service_type">
+        <!-- <div class="ico-basket"></div> -->
+        <h3 class="service_type_title ico-basket">E-Commerce</h3>
+        <p class="service_type_text">Proin iaculis purus consequat sem cure 
+          digni ssim. Donec porttitora entum suscipit 
+          aenean rhoncus posuere odio in tincidunt.</p>
+      </li>
+      <li class="service_type">
+        <h3 class="service_type_title ico-responsive">Responsive Web</h3>
+        <p class="service_type_text">Proin iaculis purus consequat sem cure 
+          digni ssim. Donec porttitora entum suscipit 
+          aenean rhoncus posuere odio in tincidunt.</p>
+      </li>
+      <li class="service_type">
+        <h3 class="service_type_title ico-web">Web Security</h3>
+        <p class="service_type_text">Proin iaculis purus consequat sem cure 
+          digni ssim. Donec porttitora entum suscipit 
+          aenean rhoncus posuere odio in tincidunt.</p>
+      </li>
+    </ul>
+
+ </section>
+
+  <section class="contacts">
+
+    <h2 class="section_title whait">Contact us</h2>
+    <p class="section_text greu">Proin iaculis purus consequat sem cure. </p>
+
+    <form class="wrapper_form" action="#" method="get">
+      <div class="contact_form">
+        <div class="contact_details">
+          <input class="contact_details_subf valid invalid" type="text" name="name" placeholder="your Name *">
+          <input class="contact_details_subf valid invalid" type="text" name="email" placeholder="your e-mail *">
+          <input class="contact_details_subf" type="text" name="subject" placeholder="subject">
         </div>
-
-        <form action="">
-            <h4>REQUEST A QUOTE</h4>
-            <input type="text" name="fulname" placeholder="Full Name">
-            <input type="text" name="email" placeholder="Email Adress">
-            <input type="text" name="phone" placeholder="Phone Number">
-            <input type="text" name="country" placeholder="Country">
-            <label><input></label> </label>
-        </form>
-
-
-    </section>
-
+        <input class="contact_details_subf_big valid invalid" type="text" name="message" placeholder="Your message *">
+      </div>
+      <input type="submit" value="Send Message" class="contact_button">
+    </form>
+  </section>
 
 </body>
 </html>

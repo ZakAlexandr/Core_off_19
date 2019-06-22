@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Wisdom';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Wisdom'), url('../fonts/Wisdom.woff') format('woff');
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'),
+       url('../fonts/roboto.woff') format('woff'), /* Modern Browsers */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat'),
+       url('../fonts/montserrat-regular.woff') format('woff'), /* Modern Browsers */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat-bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'),
+       url('../fonts/montserrat-700.woff') format('woff'), /* Modern Browsers */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+}
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: #0f0101;
+  text-align: center;
+}
+section, header{
+  font-size: 14px;
+  width: 940px;
+  margin: 0 auto;
+}
+/*----------------section Header-------------*/
+.page_nav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+.header_logo a{
+  font-size: 26px;
+  font-family: "Wisdom";
+  color: #fed136;
+}
+.header_menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 485px;
+  list-style: none;
+}
+.menu_link{
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  color: #0f0101;
+  text-transform: uppercase;
+  text-align: center; 
+}
+.menu_link:hover{
+  color: #fed136;
+}
+.menu_link:focus{
+  color: #fed136;
+}
+/*----------------section services --------------*/
+.services{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-bottom: 70px;
+}
+.service_type{
+  height: 232px;
+  width: 290px;
+  margin-right: 30px;
+}
+.service_type:last-child{
+  margin-right: 0;
+}
+.service_type_title{
+  font-size: 18px;
+  font-family: "Montserrat-bold";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  /* line-height: 4.16; */
+  text-align: center;
+}
+.service_type_title::before{
+  content: "";
+  display: block;
+  width: 62px;
+  height: 62px;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+}
+.ico-basket::before{
+  background: url(../img/Icon-Basket@1X.png) no-repeat center;
+}
+.ico-responsive::before{
+  background: url(../img/Icon-Laptop@1X.png) no-repeat center;
+}
+.ico-web::before{
+  background: url(../img/Icon-Locked@1X.png) no-repeat center;
+}
+.service_type_text{
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: rgb(119, 119, 119);
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+/*----------------section contact --------------*/
+.contacts{
+  background: url(../img/Map_Image@1X.png) no-repeat rgba(34, 34, 34,0.902);
+  background-position: center right;
+  width: auto;
+  height: 678px;
+}
+
+.section_title{
+  font-size: 40px;
+  font-family: "Montserrat-bold";
+  font-weight: bold;
+  text-transform: uppercase;
+  /* line-height: 1.2; */
+  text-align: center;
+  padding-top: 110px;
+  /* padding-bottom: 22px; */
+}
+.section_text{
+  font-size: 16px;
+  font-family: "DroidSerif";
+  font-style: italic;
+  /* line-height: 1.2; */
+  text-align: center;
+  padding-bottom: 80px;
+}
+.greu{
+  color: rgb(119, 119, 119);
+}
+.whait{
+  color: rgb(255, 255, 255);
+}
+
+
+
+/*------------ FORM ---------------*/
+.wrapper_form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_form{
+  display: flex;
+}
+.contact_details{
+  display: flex;
+  flex-direction: column;
+}
+.contact_details_subf{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 454px;
+  height: 54px;
+  margin: 0 30px 30px 0;
+        /* text on the form detailsы */
+  font-size: 14px;
+  font-family: "Montserrat-bold";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 22px;
+}
+.contact_details_subf_big{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(204, 204, 204);
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  width: 454px;
+  height: 222px;
+  font-size: 14px;
+  font-family: "Montserrat-bold";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+  padding-left: 22px;
+}
+.valid:valid {
+  color: green;
+  outline: solid;
+}
+.invalid:invalid {
+  color: red;
+  outline: solid;
+}
+
+.contact_button{
+  display: flex;
+  justify-content: center;
+  width: 240px;
+  height: 68px;
+  border-radius: 3px;
+  background-color: rgb(254, 209, 54);
+  border-style: none;
+        /* Text on the button */
+  font-size: 18px;
+  font-family: "Montserrat-bold";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
