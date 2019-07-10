@@ -59,7 +59,7 @@ section, header{
 .page_nav{
   display: flex;
   justify-content: space-between;
-  margin-top: 42px;
+  padding-top: 42px;
 }
 .header_logo a{
   font-size: 26px;
@@ -79,7 +79,8 @@ section, header{
   font-weight: 400;
   color: #0f0101;
   text-transform: uppercase;
-  text-align: center; 
+  text-align: center;
+  display: block; 
 }
 .menu_link:hover{
   color: #fed136;
@@ -246,4 +247,8 @@ section, header{
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
+  cursor: pointer;
+}
+input:focus {
+  outline: 0;
 }
