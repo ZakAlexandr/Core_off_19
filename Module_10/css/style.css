@@ -255,10 +255,8 @@ body {
 
 .subtitle--section {    
     font-size: 2.4rem;
-    margin-bottom: 20px;
     text-transform: none;
-    position: relative;
-    bottom: 25px;
+    display: block;
 }
 
 .title--section {    
@@ -268,7 +266,8 @@ body {
 
 .title--section::after {
     content:'';
-    position: absolute;
+    display: block;
+    position: relative;
     bottom: -40px;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -375,7 +374,6 @@ body {
 
 .team__title {
     margin-bottom: 90px;
-    margin-top: 45px;
 }
 
 .team__text {
